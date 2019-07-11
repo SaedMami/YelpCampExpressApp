@@ -9,7 +9,7 @@ var flash = require('connect-flash');
 
 mongoose
 	.connect(
-		'mongodb+srv://smami:@sRoma1927@wdbc-y8u18.mongodb.net/test?retryWrites=true&w=majority',
+		process.env.DATABASEURL,
 		{
 			useNewUrlParser: true,
 			useCreateIndex: true
