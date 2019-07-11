@@ -69,6 +69,6 @@ app.use(require("./routes/index"));
 
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
 	console.log('YelpCamp Server has started.');
 });
