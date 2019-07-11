@@ -19,7 +19,7 @@ mongoose
 		console.log('Connected to DB');
 	})
 	.catch(err => {
-		console.log('Error:', err.message);
+		console.log('Database connection error:', err.message);
 	});
 
 var seedDB = require('./seeds');
